@@ -55,11 +55,7 @@
    - **Plan**: Free (or paid)
 
 5. Add Environment Variables:
-   - `NODE_ENV`: `production`
-   - `PORT`: `10000` (or leave empty for auto-assignment)
-   - `MONGODB_URI`: Your MongoDB connection string
-     - For MongoDB Atlas: `mongodb+srv://username:password@cluster.mongodb.net/bolosign?retryWrites=true&w=majority`
-     - For local MongoDB: `mongodb://localhost:27017/bolosign`
+  
 
 6. Deploy
 
@@ -158,4 +154,5 @@ If you see CORS errors, ensure:
 5. **Monitoring**: Set up error tracking (Sentry, LogRocket)
 6. **CDN**: Use CDN for static assets
 7. **SSL**: Ensure HTTPS is enabled
+
 
