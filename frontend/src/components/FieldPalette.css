@@ -1,0 +1,81 @@
+.field-palette {
+  width: 200px;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  height: fit-content;
+}
+
+.field-palette h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.instruction {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.field-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.field-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  cursor: grab;
+  transition: all 0.2s;
+  background: white;
+}
+
+.field-item:hover {
+  border-color: #4CAF50;
+  background: #f0f8f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.field-item:active {
+  cursor: grabbing;
+}
+
+.field-item.selected {
+  border-color: #4CAF50;
+  background: #e8f5e9;
+}
+
+.field-icon {
+  font-size: 20px;
+}
+
+.field-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .field-palette {
+    width: 100%;
+  }
+  
+  .field-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .field-item {
+    flex: 1;
+    min-width: 120px;
+  }
+}
+

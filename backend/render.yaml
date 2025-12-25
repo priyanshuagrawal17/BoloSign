@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: bolosign-backend
+    env: node
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        sync: false
+        # Set this in Render dashboard: mongodb://your-connection-string
+
